@@ -9,6 +9,7 @@
   <meta property="og:description" content="Rugged gear with calm power. Heavy-duty streetwear built to last." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/og-image.jpg" />
+  <link rel="icon" href="/favicon.ico" />
   <meta name="theme-color" content="#0a0a0a" />
   <style>
     :root{
@@ -26,7 +27,7 @@
     header{position:sticky; top:0; z-index:30; backdrop-filter:blur(8px); background:rgba(10,10,10,.55); border-bottom:1px solid rgba(255,255,255,.05)}
     .nav{display:flex; align-items:center; justify-content:space-between; height:64px}
     .logo{display:flex; align-items:center; gap:.6rem; font-weight:900; letter-spacing:.12em}
-    .logo .mark{width:26px; height:26px; border-radius:6px; background:none}
+    .logo .mark{width:26px; height:26px; border-radius:6px; display:inline-block}
     .navlinks{display:flex; gap:1rem}
     .navlinks a{padding:.6rem .8rem; border-radius:10px; color:#cfcfcf}
     .navlinks a:hover{background:rgba(255,255,255,.06); color:#fff}
@@ -70,7 +71,7 @@
       .about, .newsletter, .foot{grid-template-columns: 1fr}
       .collections .grid{grid-template-columns: 1fr 1fr}
       .lookbook .grid{grid-template-columns: 1fr 1fr}
-      .shop .cards{grid-template-columns: 1 fr 1fr}
+      .shop .cards{grid-template-columns: 1fr 1fr}
     }
     @media (max-width: 640px){
       .navlinks{display:none}
@@ -82,7 +83,10 @@
 <body>
   <header>
     <div class="container nav">
-      <div class="logo"><img src="bbb-logo.svg" alt="BBB logo" class="mark"/><span>BBB</span></div>
+      <div class="logo">
+        <img src="bbb-logo.png" alt="BBB logo" class="mark"/>
+        <span>BBB</span>
+      </div>
       <nav class="navlinks">
         <a href="#about">Story</a>
         <a href="#collections">Collections</a>
@@ -222,7 +226,10 @@
   <footer>
     <div class="container foot">
       <div>
-        <div class="logo" style="margin-bottom:6px"><img src="bbb-logo.svg" class="mark" alt="BBB logo"/><span>BBB</span></div>
+        <div class="logo" style="margin-bottom:6px">
+          <img src="bbb-logo.png" class="mark" alt="BBB logo"/>
+          <span>BBB</span>
+        </div>
         <div class="legal">© <span id="year"></span> Bear Bull Boar. All rights reserved. Terms • Privacy</div>
       </div>
       <div style="justify-self:end">
