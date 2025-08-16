@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PEACEFUL SPIRIT (PSPRT) — Heavy-Duty Calm</title>
+  <meta name="description" content="PEACEFUL SPIRIT (PSPRT) — heavy-duty, reliable, fashion built for the outdoors. Calm energy. Rugged quality. Drops, lookbook, and story." />
+  <meta property="og:title" content="PEACEFUL SPIRIT (PSPRT)" />
+  <meta property="og:description" content="Heavy-duty calm. Rugged streetwear built to last." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <style>
+    :root{
+      --bg:#0a0a0a; --card:#111; --muted:#888; --fg:#f4f4f4; --accent:#d2192e; --accent-2:#a90f22;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;}
+    body{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial; background:radial-gradient(1200px 800px at 80% -10%, rgba(210,25,46,.1), transparent 40%), var(--bg); color:var(--fg);}
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1200px; margin:0 auto; padding:0 20px}
+    .btn{display:inline-flex; align-items:center; gap:.6rem; padding:.85rem 1.1rem; border-radius:999px; border:1px solid #2a2a2a; backdrop-filter:saturate(120%); transition:.2s; font-weight:700; letter-spacing:.3px}
+    .btn:hover{transform:translateY(-1px); box-shadow:0 6px 24px rgba(210,25,46,.15)}
+    .btn.primary{background:linear-gradient(135deg, var(--accent), var(--accent-2)); border-color:transparent}
+    .btn.ghost{background:rgba(255,255,255,.04)}
+    header{position:sticky; top:0; z-index:30; backdrop-filter:blur(8px); background:rgba(10,10,10,.55); border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav{display:flex; align-items:center; justify-content:space-between; height:64px}
+    .logo{display:flex; align-items:center; gap:.6rem; font-weight:900; letter-spacing:.12em}
+    .logo .mark{width:26px; height:26px; border-radius:6px; background:linear-gradient(145deg,var(--accent-2),var(--accent)); box-shadow:inset 0 0 12px rgba(0,0,0,.4)}
+    .navlinks{display:flex; gap:1rem}
+    .navlinks a{padding:.6rem .8rem; border-radius:10px; color:#cfcfcf}
+    .navlinks a:hover{background:rgba(255,255,255,.06); color:#fff}
+    .mobile-toggle{display:none}
+    .hero{padding:88px 0 48px; position:relative}
+    .hero h1{font-size:clamp(36px, 6vw, 64px); line-height:1.05; margin:0 0 14px}
+    .hero p{max-width:740px; color:#c9c9c9; font-size:clamp(16px,2.2vw,18px)}
+    .hero-cta{display:flex; gap:.8rem; flex-wrap:wrap; margin-top:22px}
+    .badges{display:flex; gap:12px; margin-top:28px; flex-wrap:wrap}
+    .badge{border:1px solid #262626; padding:.45rem .75rem; border-radius:999px; color:#b9b9b9; font-size:.86rem}
+    .section{padding:56px 0; border-top:1px solid rgba(255,255,255,.06)}
+    .grid{display:grid; gap:18px}
+    .about{display:grid; gap:24px; grid-template-columns: 1.1fr 1fr}
+    .about .card{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.2)); border:1px solid rgba(255,255,255,.06); border-radius:18px; padding:20px}
+    .about h3{margin:0 0 6px}
+    .about p{color:#c9c9c9}
+    .collections .grid{grid-template-columns: repeat(3, 1fr)}
+    .tile{position:relative; border-radius:18px; overflow:hidden; border:1px solid rgba(255,255,255,.06); background:#121212}
+    .tile img{width:100%; height:260px; object-fit:cover; display:block; filter:grayscale(.3)}
+    .tile .tcap{position:absolute; inset:auto 0 0 0; padding:16px; background:linear-gradient(0deg, rgba(0,0,0,.65), transparent); display:flex; justify-content:space-between; align-items:end}
+    .tcap h4{margin:0}
+    .tcap a{font-size:.9rem}
+    .lookbook .grid{grid-template-columns: repeat(4, 1fr)}
+    .look{border-radius:16px; overflow:hidden; border:1px solid rgba(255,255,255,.06)}
+    .look img{width:100%; height:220px; object-fit:cover; display:block}
+    .newsletter{display:grid; grid-template-columns: 1.2fr .8fr; gap:24px; align-items:center}
+    .newsletter .panel{border:1px solid rgba(255,255,255,.06); border-radius:18px; padding:20px; background:radial-gradient(500px 240px at 10% 10%, rgba(210,25,46,.15), transparent), #111}
+    .newsletter form{display:flex; gap:10px; margin-top:10px}
+    .newsletter input{flex:1; padding:.95rem 1rem; border-radius:14px; border:1px solid #2a2a2a; background:#0f0f0f; color:#f5f5f5}
+    .shop .cards{display:grid; grid-template-columns: repeat(3, 1fr); gap:18px}
+    .card{border:1px solid rgba(255,255,255,.06); border-radius:18px; overflow:hidden; background:#121212}
+    .card img{width:100%; height:240px; object-fit:cover}
+    .card .body{padding:16px}
+    .price{color:#ddd}
+    footer{padding:36px 0 60px; border-top:1px solid rgba(255,255,255,.06)}
+    .foot{display:grid; grid-template-columns:1.2fr .8fr; gap:18px; align-items:start}
+    .socials{display:flex; gap:12px}
+    .socials a{border:1px solid #2a2a2a; padding:.6rem .8rem; border-radius:12px; color:#c9c9c9}
+    .legal{color:#8a8a8a; font-size:.9rem}
+    @media (max-width: 980px){
+      .about, .newsletter, .foot{grid-template-columns: 1fr}
+      .collections .grid{grid-template-columns: 1fr 1fr}
+      .lookbook .grid{grid-template-columns: 1fr 1fr}
+      .shop .cards{grid-template-columns: 1fr 1fr}
+    }
+    @media (max-width: 640px){
+      .navlinks{display:none}
+      .mobile-toggle{display:block}
+      .collections .grid, .lookbook .grid, .shop .cards{grid-template-columns: 1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo"><span class="mark"></span><span>PSPRT</span></div>
+      <nav class="navlinks">
+        <a href="#about">Story</a>
+        <a href="#collections">Collections</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#shop">Shop</a>
+        <a href="#newsletter">Drops</a>
+      </nav>
+      <button class="mobile-toggle btn ghost" aria-label="Open menu" onclick="toggleMenu()">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>Heavy‑Duty Calm.<br/>Rugged pieces. Spiritual core.</h1>
+      <p>PEACEFUL SPIRIT (PSPRT) blends wilderness grit with inner stillness. Built for real wear — city to trail — with silhouettes that hold power without the noise.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#shop">Shop the Latest</a>
+        <a class="btn ghost" href="#lookbook">View Lookbook</a>
+      </div>
+      <div class="badges">
+        <span class="badge">Built to last</span>
+        <span class="badge">Black • Red • Steel</span>
+        <span class="badge">Outdoor utility</span>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="card">
+          <h3>Design Ethos</h3>
+          <p>PSPRT = Peace in motion. We design with field‑tested materials, minimal branding, and a strict palette (black / red / neutral). Every piece balances mobility, durability, and a clean silhouette.</p>
+        </div>
+        <div class="card">
+          <h3>Animals of Strength</h3>
+          <p>Bear • Bull • Boar — the spirit behind our heavy‑duty line. Raw force, grounded presence. Crest marks appear as subtle embroidery and heat‑press patches across the range.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="collections" class="section collections">
+      <div class="container">
+        <h2 style="margin:0 0 14px">Collections</h2>
+        <div class="grid">
+          <article class="tile">
+            <img src="https://images.unsplash.com/photo-1516822003754-cca485356ecb?q=80&w=1400&auto=format&fit=crop" alt="Outerwear"/>
+            <div class="tcap"><h4>Outerwear</h4><a href="#shop">Shop →</a></div>
+          </article>
+          <article class="tile">
+            <img src="https://images.unsplash.com/photo-1582582621959-b6f3d33fd5bf?q=80&w=1400&auto=format&fit=crop" alt="Utility"/>
+            <div class="tcap"><h4>Utility</h4><a href="#shop">Shop →</a></div>
+          </article>
+          <article class="tile">
+            <img src="https://images.unsplash.com/photo-1503342452485-86ff0a2b26d1?q=80&w=1400&auto=format&fit=crop" alt="Essentials"/>
+            <div class="tcap"><h4>Essentials</h4><a href="#shop">Shop →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="lookbook" class="section lookbook">
+      <div class="container">
+        <h2 style="margin:0 0 14px">Lookbook</h2>
+        <div class="grid">
+          <div class="look"><img src="https://images.unsplash.com/photo-1519744346366-6f798d77a7f4?q=80&w=1200&auto=format&fit=crop" alt="Look 1"></div>
+          <div class="look"><img src="https://images.unsplash.com/photo-1503342217505-b0a15cf70489?q=80&w=1200&auto=format&fit=crop" alt="Look 2"></div>
+          <div class="look"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Look 3"></div>
+          <div class="look"><img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1200&auto=format&fit=crop" alt="Look 4"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="section shop">
+      <div class="container">
+        <h2 style="margin:0 0 14px">Featured</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1548883354-aa8872acfa45?q=80&w=1400&auto=format&fit=crop" alt="Crest Hoodie"/>
+            <div class="body">
+              <h4>Crest Hoodie — Black/Red</h4>
+              <div class="price">$78</div>
+              <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap">
+                <a class="btn primary" href="https://yourshop.link/hoodie">Buy</a>
+                <a class="btn ghost" href="#">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=1400&auto=format&fit=crop" alt="Utility Cargo"/>
+            <div class="body">
+              <h4>Utility Cargo — Steel</h4>
+              <div class="price">$84</div>
+              <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap">
+                <a class="btn primary" href="https://yourshop.link/cargo">Buy</a>
+                <a class="btn ghost" href="#">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1542326237-94b1c5a538d7?q=80&w=1400&auto=format&fit=crop" alt="Thermal Layer"/>
+            <div class="body">
+              <h4>Thermal Layer — Blood Red</h4>
+              <div class="price">$42</div>
+              <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap">
+                <a class="btn primary" href="https://yourshop.link/thermal">Buy</a>
+                <a class="btn ghost" href="#">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section">
+      <div class="container newsletter">
+        <div class="panel">
+          <h3>Be first for drops</h3>
+          <p>Join the list for early access, size runs, and one‑off experiments. Zero spam. Just signal.</p>
+          <form onsubmit="subscribe(event)">
+            <input type="email" id="email" placeholder="you@domain.com" required />
+            <button class="btn primary" type="submit">Notify me</button>
+          </form>
+          <p id="msg" class="legal" style="margin-top:8px"></p>
+        </div>
+        <div class="panel">
+          <h3>Stockists & Collabs</h3>
+          <p>We partner with select stores and artists. For wholesale or creative projects, reach out below.</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px">
+            <a class="btn ghost" href="mailto:hello@psprt.co?subject=Collab%20Inquiry">Email</a>
+            <a class="btn ghost" href="https://instagram.com/_gaspvmp" target="_blank" rel="noopener">Instagram</a>
+            <a class="btn ghost" href="https://twitter.com/AttackOnTojii" target="_blank" rel="noopener">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>
+        <div class="logo" style="margin-bottom:6px"><span class="mark"></span><span>PSPRT</span></div>
+        <div class="legal">© <span id="year"></span> Peaceful Spirit. All rights reserved. Terms • Privacy</div>
+      </div>
+      <div style="justify-self:end">
+        <div class="socials">
+          <a href="https://instagram.com/_gaspvmp" target="_blank" rel="noopener">IG</a>
+          <a href="https://www.youtube.com/@gaspvmp." target="_blank" rel="noopener">YT</a>
+          <a href="https://twitter.com/AttackOnTojii" target="_blank" rel="noopener">X</a>
+          <a href="https://threads.net/@_gaspvmp" target="_blank" rel="noopener">Threads</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const yearEl=document.getElementById('year'); yearEl.textContent=new Date().getFullYear();
+    function toggleMenu(){
+      const nav=document.querySelector('.navlinks');
+      if(!nav) return; 
+      nav.style.display = nav.style.display==='flex' ? 'none' : 'flex';
+      nav.style.flexDirection='column';
+      nav.style.position='absolute';
+      nav.style.top='64px';
+      nav.style.right='20px';
+      nav.style.background='rgba(10,10,10,.95)';
+      nav.style.padding='10px';
+      nav.style.border='1px solid rgba(255,255,255,.06)';
+      nav.style.borderRadius='12px';
+    }
+    function subscribe(e){
+      e.preventDefault();
+      const email=document.getElementById('email').value.trim();
+      const msg=document.getElementById('msg');
+      if(!email){msg.textContent='Enter a valid email.'; return}
+      msg.textContent='Got it — you\'re on the list.';
+      (document.querySelector('form')).reset();
+    }
+  </script>
+</body>
+</html>
