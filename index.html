@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PEACEFUL SPIRIT (PSPRT) — Heavy-Duty Calm</title>
-  <meta name="description" content="PEACEFUL SPIRIT (PSPRT) — heavy-duty, reliable, fashion built for the outdoors. Calm energy. Rugged quality. Drops, lookbook, and story." />
-  <meta property="og:title" content="PEACEFUL SPIRIT (PSPRT)" />
-  <meta property="og:description" content="Heavy-duty calm. Rugged streetwear built to last." />
+  <title>BEAR • BULL • BOAR (BBB) — Heavy-Duty Calm</title>
+  <meta name="description" content="BBB — Bear • Bull • Boar. Heavy-duty, reliable gear and apparel built for the outdoors. Rugged quality. Calm power." />
+  <meta property="og:title" content="BEAR • BULL • BOAR (BBB)" />
+  <meta property="og:description" content="Rugged gear with calm power. Heavy-duty streetwear built to last." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/og-image.jpg" />
   <meta name="theme-color" content="#0a0a0a" />
@@ -26,7 +26,7 @@
     header{position:sticky; top:0; z-index:30; backdrop-filter:blur(8px); background:rgba(10,10,10,.55); border-bottom:1px solid rgba(255,255,255,.05)}
     .nav{display:flex; align-items:center; justify-content:space-between; height:64px}
     .logo{display:flex; align-items:center; gap:.6rem; font-weight:900; letter-spacing:.12em}
-    .logo .mark{width:26px; height:26px; border-radius:6px; background:linear-gradient(145deg,var(--accent-2),var(--accent)); box-shadow:inset 0 0 12px rgba(0,0,0,.4)}
+    .logo .mark{width:26px; height:26px; border-radius:6px; background:none}
     .navlinks{display:flex; gap:1rem}
     .navlinks a{padding:.6rem .8rem; border-radius:10px; color:#cfcfcf}
     .navlinks a:hover{background:rgba(255,255,255,.06); color:#fff}
@@ -45,7 +45,7 @@
     .about p{color:#c9c9c9}
     .collections .grid{grid-template-columns: repeat(3, 1fr)}
     .tile{position:relative; border-radius:18px; overflow:hidden; border:1px solid rgba(255,255,255,.06); background:#121212}
-    .tile img{width:100%; height:260px; object-fit:cover; display:block; filter:grayscale(.3)}
+    .tile img{width:100%; height:260px; object-fit:cover; display:block; filter:grayscale(.2) contrast(1.05)}
     .tile .tcap{position:absolute; inset:auto 0 0 0; padding:16px; background:linear-gradient(0deg, rgba(0,0,0,.65), transparent); display:flex; justify-content:space-between; align-items:end}
     .tcap h4{margin:0}
     .tcap a{font-size:.9rem}
@@ -70,7 +70,7 @@
       .about, .newsletter, .foot{grid-template-columns: 1fr}
       .collections .grid{grid-template-columns: 1fr 1fr}
       .lookbook .grid{grid-template-columns: 1fr 1fr}
-      .shop .cards{grid-template-columns: 1fr 1fr}
+      .shop .cards{grid-template-columns: 1 fr 1fr}
     }
     @media (max-width: 640px){
       .navlinks{display:none}
@@ -82,7 +82,7 @@
 <body>
   <header>
     <div class="container nav">
-      <div class="logo"><span class="mark"></span><span>PSPRT</span></div>
+      <div class="logo"><img src="bbb-logo.svg" alt="BBB logo" class="mark"/><span>BBB</span></div>
       <nav class="navlinks">
         <a href="#about">Story</a>
         <a href="#collections">Collections</a>
@@ -97,7 +97,7 @@
   <main>
     <section class="hero container">
       <h1>Heavy‑Duty Calm.<br/>Rugged pieces. Spiritual core.</h1>
-      <p>PEACEFUL SPIRIT (PSPRT) blends wilderness grit with inner stillness. Built for real wear — city to trail — with silhouettes that hold power without the noise.</p>
+      <p>BBB (Bear • Bull • Boar) blends wilderness grit with inner stillness. Built for real wear — city to trail — with silhouettes that hold power without the noise.</p>
       <div class="hero-cta">
         <a class="btn primary" href="#shop">Shop the Latest</a>
         <a class="btn ghost" href="#lookbook">View Lookbook</a>
@@ -113,11 +113,11 @@
       <div class="container about">
         <div class="card">
           <h3>Design Ethos</h3>
-          <p>PSPRT = Peace in motion. We design with field‑tested materials, minimal branding, and a strict palette (black / red / neutral). Every piece balances mobility, durability, and a clean silhouette.</p>
+          <p>BBB = Calm in motion. We design with field‑tested materials, minimal branding, and a strict palette (black / red / neutral). Every piece balances mobility, durability, and a clean silhouette.</p>
         </div>
         <div class="card">
-          <h3>Animals of Strength</h3>
-          <p>Bear • Bull • Boar — the spirit behind our heavy‑duty line. Raw force, grounded presence. Crest marks appear as subtle embroidery and heat‑press patches across the range.</p>
+          <h3>Bear • Bull • Boar</h3>
+          <p>Raw force, grounded presence. Crest marks appear as subtle embroidery and heat‑press patches across the range.</p>
         </div>
       </div>
     </section>
@@ -127,16 +127,16 @@
         <h2 style="margin:0 0 14px">Collections</h2>
         <div class="grid">
           <article class="tile">
-            <img src="https://images.unsplash.com/photo-1516822003754-cca485356ecb?q=80&w=1400&auto=format&fit=crop" alt="Outerwear"/>
-            <div class="tcap"><h4>Outerwear</h4><a href="#shop">Shop →</a></div>
+            <img src="https://source.unsplash.com/featured/1200x800?survival,knife" alt="Knives & Tools"/>
+            <div class="tcap"><h4>Knives & Tools</h4><a href="#shop">Shop →</a></div>
           </article>
           <article class="tile">
-            <img src="https://images.unsplash.com/photo-1582582621959-b6f3d33fd5bf?q=80&w=1400&auto=format&fit=crop" alt="Utility"/>
-            <div class="tcap"><h4>Utility</h4><a href="#shop">Shop →</a></div>
+            <img src="https://source.unsplash.com/featured/1200x800?archery,bow" alt="Archery"/>
+            <div class="tcap"><h4>Archery</h4><a href="#shop">Shop →</a></div>
           </article>
           <article class="tile">
-            <img src="https://images.unsplash.com/photo-1503342452485-86ff0a2b26d1?q=80&w=1400&auto=format&fit=crop" alt="Essentials"/>
-            <div class="tcap"><h4>Essentials</h4><a href="#shop">Shop →</a></div>
+            <img src="https://source.unsplash.com/featured/1200x800?workwear,jacket" alt="Heavy-Duty Apparel"/>
+            <div class="tcap"><h4>Heavy‑Duty Apparel</h4><a href="#shop">Shop →</a></div>
           </article>
         </div>
       </div>
@@ -146,10 +146,10 @@
       <div class="container">
         <h2 style="margin:0 0 14px">Lookbook</h2>
         <div class="grid">
-          <div class="look"><img src="https://images.unsplash.com/photo-1519744346366-6f798d77a7f4?q=80&w=1200&auto=format&fit=crop" alt="Look 1"></div>
-          <div class="look"><img src="https://images.unsplash.com/photo-1503342217505-b0a15cf70489?q=80&w=1200&auto=format&fit=crop" alt="Look 2"></div>
-          <div class="look"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Look 3"></div>
-          <div class="look"><img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1200&auto=format&fit=crop" alt="Look 4"></div>
+          <div class="look"><img src="https://source.unsplash.com/featured/800x800?outdoor,man,woods" alt="Look 1"></div>
+          <div class="look"><img src="https://source.unsplash.com/featured/800x800?backpack,gear" alt="Look 2"></div>
+          <div class="look"><img src="https://source.unsplash.com/featured/800x800?camping,axe" alt="Look 3"></div>
+          <div class="look"><img src="https://source.unsplash.com/featured/800x800?work,gloves,leather" alt="Look 4"></div>
         </div>
       </div>
     </section>
@@ -159,20 +159,20 @@
         <h2 style="margin:0 0 14px">Featured</h2>
         <div class="cards">
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1548883354-aa8872acfa45?q=80&w=1400&auto=format&fit=crop" alt="Crest Hoodie"/>
+            <img src="https://source.unsplash.com/featured/1200x800?tactical,jacket,black" alt="Tactical Jacket"/>
             <div class="body">
-              <h4>Crest Hoodie — Black/Red</h4>
-              <div class="price">$78</div>
+              <h4>Tactical Jacket — Black/Red</h4>
+              <div class="price">$98</div>
               <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap">
-                <a class="btn primary" href="https://yourshop.link/hoodie">Buy</a>
+                <a class="btn primary" href="https://yourshop.link/jacket">Buy</a>
                 <a class="btn ghost" href="#">Details</a>
               </div>
             </div>
           </div>
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=1400&auto=format&fit=crop" alt="Utility Cargo"/>
+            <img src="https://source.unsplash.com/featured/1200x800?cargo,pants,field" alt="Field Cargo Pants"/>
             <div class="body">
-              <h4>Utility Cargo — Steel</h4>
+              <h4>Field Cargo — Steel</h4>
               <div class="price">$84</div>
               <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap">
                 <a class="btn primary" href="https://yourshop.link/cargo">Buy</a>
@@ -181,9 +181,9 @@
             </div>
           </div>
           <div class="card">
-            <img src="https://images.unsplash.com/photo-1542326237-94b1c5a538d7?q=80&w=1400&auto=format&fit=crop" alt="Thermal Layer"/>
+            <img src="https://source.unsplash.com/featured/1200x800?thermal,base,layer" alt="Thermal Base Layer"/>
             <div class="body">
-              <h4>Thermal Layer — Blood Red</h4>
+              <h4>Thermal Base Layer — Blood Red</h4>
               <div class="price">$42</div>
               <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap">
                 <a class="btn primary" href="https://yourshop.link/thermal">Buy</a>
@@ -210,7 +210,7 @@
           <h3>Stockists & Collabs</h3>
           <p>We partner with select stores and artists. For wholesale or creative projects, reach out below.</p>
           <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px">
-            <a class="btn ghost" href="mailto:hello@psprt.co?subject=Collab%20Inquiry">Email</a>
+            <a class="btn ghost" href="mailto:hello@bbb.co?subject=Collab%20Inquiry">Email</a>
             <a class="btn ghost" href="https://instagram.com/_gaspvmp" target="_blank" rel="noopener">Instagram</a>
             <a class="btn ghost" href="https://twitter.com/AttackOnTojii" target="_blank" rel="noopener">Twitter</a>
           </div>
@@ -222,8 +222,8 @@
   <footer>
     <div class="container foot">
       <div>
-        <div class="logo" style="margin-bottom:6px"><span class="mark"></span><span>PSPRT</span></div>
-        <div class="legal">© <span id="year"></span> Peaceful Spirit. All rights reserved. Terms • Privacy</div>
+        <div class="logo" style="margin-bottom:6px"><img src="bbb-logo.svg" class="mark" alt="BBB logo"/><span>BBB</span></div>
+        <div class="legal">© <span id="year"></span> Bear Bull Boar. All rights reserved. Terms • Privacy</div>
       </div>
       <div style="justify-self:end">
         <div class="socials">
